@@ -1,38 +1,32 @@
-# sv
+# LyricsSound
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Una aplicación web construida con **Svelte** que permite buscar letras de canciones y ver la portada del álbum usando APIs públicas.
 
-## Creating a project
+## Características
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Búsqueda de letras usando la API de [Lyrics.ovh](https://lyrics.ovh)
+- Obtención de portada de álbum desde la API de [Last.fm](https://www.last.fm/api)
+- Diseño elegante con Tailwind CSS
 
-```bash
-# create a new project in the current directory
-npx sv create
+# Instalación
 
-# create a new project in my-app
-npx sv create my-app
-```
+# 1. Clona el repositorio
+git clone https://github.com/ivangc09/lyrics-search.git
 
-## Developing
+# 2. Entra al directorio
+cd lyrics-search
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+# 3. Instala dependencias
+npm install
 
-```bash
+# 4. Corre la app
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
+![image](https://github.com/user-attachments/assets/be03945b-92a8-43f7-b01b-bab9c9d818ad)
 
-To create a production version of your app:
+![image](https://github.com/user-attachments/assets/4425d1fe-a978-465d-a10e-3e31edf343af)
 
-```bash
-npm run build
-```
+![image](https://github.com/user-attachments/assets/778bbfa3-15fe-449f-a21f-013b27113853)
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

@@ -4,7 +4,7 @@
         <nav>
             <ul class="flex justify-center space-x-4 mt-2">
                 <li><a href="/" class="poiret-font hover:text-[#deb887]">Home</a></li>
-                <li><a href="#formulario" class="poiret-font hover:text-[#deb887]">Search for artist</a></li>
+                <li><a href="#formulario" class="poiret-font hover:text-[#deb887]">Search any lyric</a></li>
                 <li><a href="/about" class="poiret-font hover:text-[#deb887]">About us</a></li>
             </ul>
         </nav>

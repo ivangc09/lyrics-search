@@ -63,12 +63,12 @@
         {#if mostrarPortada}
         <div class="flex flex-col justify-center bg-[#3a2f2f] p-6 rounded-xl border border-[#3a2f2f] text-white shadow-lg w-100 h-90">
             <Album {artista} {cancion} />
-            <h1 class="text-2xl font-bold mt-4">{artista}</h1>
-            <p class="text-lg">{cancion}</p>
+            <h1 class="lobster-font text-2xl font-bold mt-4">{artista}</h1>
+            <p class="lobster-font text-md">{cancion}</p>
         </div>
             
         {/if}
-        <div class="w-full max-w-xl whitespace-pre-wrap bg-[#3a2f2f] p-6 rounded-xl border border-[#3a2f2f] text-white shadow-lg">
+        <div class="poiret-font w-full max-w-xl whitespace-pre-wrap bg-[#3a2f2f] p-6 rounded-xl border border-[#3a2f2f] text-white shadow-lg">
             {letraCorta}
             {#if letra.length > 400}
                 <button

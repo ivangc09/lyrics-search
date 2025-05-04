@@ -6,6 +6,12 @@
     let letra = '';
     let error = '';
     let mostrarPortada = false;
+    let mostrarCompleta = false;
+
+    $: letraCorta = letra.length > 400 && !mostrarCompleta
+        ? letra.slice(0, 400) + '...'
+        : letra;
+
 
     async function buscarLetra() {
         error = '';
@@ -62,9 +68,17 @@
         </div>
             
         {/if}
-            <div class="w-full max-w-xl whitespace-pre-wrap bg-[#3a2f2f] p-6 rounded-xl border border-[#3a2f2f] text-white shadow-lg">
-                {letra}
-            </div>
+        <div class="w-full max-w-xl whitespace-pre-wrap bg-[#3a2f2f] p-6 rounded-xl border border-[#3a2f2f] text-white shadow-lg">
+            {letraCorta}
+            {#if letra.length > 400}
+                <button
+                    class="mt-4 underline text-[#deb887] hover:text-[#cfa36a]"
+                    on:click={() => mostrarCompleta = !mostrarCompleta}
+                >
+                    {mostrarCompleta ? 'Mostrar menos' : 'Mostrar más'}
+                </button>
+            {/if}
+        </div>
     </div>
 
     {:else if error}
